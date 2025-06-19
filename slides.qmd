@@ -1,0 +1,38 @@
+---
+title: City River Spaces (CRiSp)
+subtitle: A tool for the automated delineation of urban river spaces
+format:
+  revealjs:
+    theme: serif
+    slide-number: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    footer: '[FOSS4G-NL](https://foss4g.nl/)'
+author:
+  - name: Francesco Nattino
+    email: f.nattino@esciencecenter.nl
+    affiliations: Netherlands eScience Center
+    orcid: 0000-0003-3286-0139
+  - name: Claudiu Forgaci
+    email: c.forgaci@tudelft.nl
+    affiliations: Delft University of Technology
+    orcid: 0000-0003-3218-5102
+date: 2025-07-03
+bibliography: references.bib
+---
+
+## Hello World
+
+First slide [@forgaci2018]
+
+## Corridor
+
+
+
+## Thank you!
+
+## References
+
+::: {#refs}
+:::
