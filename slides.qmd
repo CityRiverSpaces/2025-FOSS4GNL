@@ -1,5 +1,5 @@
 ---
-title: City River Spaces (CRiSp)
+title: '`rcrisp`'
 subtitle: A tool for the automated delineation of urban river spaces
 format:
   revealjs:
@@ -22,15 +22,110 @@ date: 2025-07-03
 bibliography: references.bib
 ---
 
-## Hello World
+## Motivation
 
-First slide [@forgaci2018]
+...
 
-## Corridor
+## The Challenge
+
+...
+
+## Delineations
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Three layers [@forgaci2018]:
+
+-   Valley
+
+-   Corridor and segments
+
+-   River space
+:::
+
+::: {.column width="50%"}
+![](./fig/method-diagram.png){width="80%"}
+:::
+
+::::
+
+## `rcrisp`
+
+-   Automated delineation of river spaces
+
+-   R package (on the way to CRAN)
+
+-   Data from input or default sources:
+
+    -   Digital Elevation Model (DEM)
+
+    -   River geometry
+
+    -   Streets and railways
+
+    -   Buildings
 
 
+## In practice
 
-## Thank you!
+...
+
+
+## Data Sources
+
+-   [**GLO-30 Copernicus DEM**](https://doi.org/10.5270/ESA-c5d3d65) - global surface model (DSM), 30m resolution
+
+-   [**Open Street Map (OSM)**](https://www.openstreetmap.org/)  - river geometry, streets, railways, buildings
+
+... or any other source.
+
+## Subpackages
+
+::::: {.columns}
+
+:::: {.column width="50%"}
+`rcoins`
+
+::: {style="font-size: 0.6em"}
+Continuity in Street Networks [@tripathy2021]
+:::
+
+::::
+
+:::: {.column width="50%"}
+`visor`
+
+:::{style="font-size: 0.6em"}
+Isovists for arbitrary geometries
+:::
+
+::::
+
+:::::
+
+## City River Spaces Dataset
+
+-   Cities in Europe
+
+-   population \> 250,000 ([Eurostat](https://doi.org/10.2908/URB_CPOP1))
+
+-   crossed by a river (OSM `waterway=river`)
+
+## Clustering (WIP)
+
+Credits: Yehan Wu, TU Delft
+
+## Outlook
+
+-   Expand data sources (Overture maps, OpenTopography)
+
+-   Consolidate dataset, refine clustering
+
+-   Development of a web app (Shiny)
+
+## Thank you! {.center}
 
 ## References
 
