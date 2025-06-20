@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "slides.html#motivation",
+    "href": "slides.html#motivation",
+    "title": "rcrisp",
+    "section": "Motivation",
+    "text": "Motivation\n…"
+  },
+  {
+    "objectID": "slides.html#the-challenge",
+    "href": "slides.html#the-challenge",
+    "title": "rcrisp",
+    "section": "The Challenge",
+    "text": "The Challenge\n…"
+  },
+  {
+    "objectID": "slides.html#delineations",
+    "href": "slides.html#delineations",
+    "title": "rcrisp",
+    "section": "Delineations",
+    "text": "Delineations\n\n\nThree layers (Forgaci 2018):\n\nValley\nCorridor and segments\nRiver space"
+  },
+  {
+    "objectID": "slides.html#rcrisp",
+    "href": "slides.html#rcrisp",
+    "title": "rcrisp",
+    "section": "rcrisp",
+    "text": "rcrisp\n\nAutomated delineation of river spaces\nR package (on the way to CRAN)\nData from input or default sources:\n\nDigital Elevation Model (DEM)\nRiver geometry\nStreets and railways\nBuildings"
+  },
+  {
+    "objectID": "slides.html#in-practice",
+    "href": "slides.html#in-practice",
+    "title": "rcrisp",
+    "section": "In practice",
+    "text": "In practice\n…"
+  },
+  {
+    "objectID": "slides.html#data-sources",
+    "href": "slides.html#data-sources",
+    "title": "rcrisp",
+    "section": "Data Sources",
+    "text": "Data Sources\n\nGLO-30 Copernicus DEM - global surface model (DSM), 30m resolution\nOpen Street Map (OSM) - river geometry, streets, railways, buildings\n\n… or any other source."
+  },
+  {
+    "objectID": "slides.html#subpackages",
+    "href": "slides.html#subpackages",
+    "title": "rcrisp",
+    "section": "Subpackages",
+    "text": "Subpackages\n\n\nrcoins\n\nContinuity in Street Networks (Tripathy et al. 2021)\n\n\nvisor\n\nIsovists for arbitrary geometries"
+  },
+  {
+    "objectID": "slides.html#city-river-spaces-dataset",
+    "href": "slides.html#city-river-spaces-dataset",
+    "title": "rcrisp",
+    "section": "City River Spaces Dataset",
+    "text": "City River Spaces Dataset\n\nCities in Europe\npopulation &gt; 250,000 (Eurostat)\ncrossed by a river (OSM waterway=river)"
+  },
+  {
+    "objectID": "slides.html#clustering-wip",
+    "href": "slides.html#clustering-wip",
+    "title": "rcrisp",
+    "section": "Clustering (WIP)",
+    "text": "Clustering (WIP)\nCredits: Yehan Wu, TU Delft"
+  },
+  {
+    "objectID": "slides.html#outlook",
+    "href": "slides.html#outlook",
+    "title": "rcrisp",
+    "section": "Outlook",
+    "text": "Outlook\n\nExpand data sources (Overture maps, OpenTopography)\nConsolidate dataset, refine clustering\nDevelopment of a web app (Shiny)"
+  },
+  {
+    "objectID": "slides.html#thank-you",
+    "href": "slides.html#thank-you",
+    "title": "rcrisp",
+    "section": "Thank you!",
+    "text": "Thank you!"
+  },
+  {
+    "objectID": "slides.html#references",
+    "href": "slides.html#references",
+    "title": "rcrisp",
+    "section": "References",
+    "text": "References\n\n\nForgaci, Claudiu. 2018. “Integrated Urban River Corridors: Spatial Design for Social-Ecological Resilience in Bucharest and Beyond.” A+ BE| Architecture and the Built Environment, no. 31: 1–382.\n\n\nTripathy, Pratyush, Pooja Rao, Krishnachandran Balakrishnan, and Teja Malladi. 2021. “An Open-Source Tool to Extract Natural Continuity and Hierarchy of Urban Street Networks.” Environment and Planning B: Urban Analytics and City Science 48 (8): 2188–2205. https://doi.org/10.1177/2399808320967680."
+  }
+]
