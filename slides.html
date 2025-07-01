@@ -6,7 +6,9 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Francesco Nattino">
@@ -51,7 +53,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-816793a8a4a837d14f6ea458e2f1c5cb.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -181,16 +183,23 @@ Claudiu Forgaci <a href="https://orcid.org/0000-0003-3218-5102" class="quarto-ti
 
   <p class="date">2025-07-03</p>
 </section>
-<section id="motivation" class="slide level2">
-<h2>Motivation</h2>
-<p>…</p>
+<section id="urban-river-transformations" class="slide level2">
+<h2>Urban river transformations</h2>
+<p><img data-src="./fig/transformations.png"></p>
+
+<aside><div>
+<p>Source: <span class="citation" data-cites="forgaci2018">Forgaci (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span></p>
+</div></aside></section>
+<section id="drawing-spatial-units" class="slide level2">
+<h2>Drawing spatial units</h2>
+<ul>
+<li><p>River is often the boundary</p></li>
+<li><p>Arbitrary delineations</p></li>
+<li><p>Modifiable aereal unit problem</p></li>
+</ul>
 </section>
-<section id="the-challenge" class="slide level2">
-<h2>The Challenge</h2>
-<p>…</p>
-</section>
-<section id="delineations" class="slide level2">
-<h2>Delineations</h2>
+<section id="delineating-urban-rivers" class="slide level2">
+<h2>Delineating urban rivers</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Three layers <span class="citation" data-cites="forgaci2018">(<a href="#/references" role="doc-biblioref" onclick="">Forgaci 2018</a>)</span>:</p>
@@ -199,35 +208,40 @@ Claudiu Forgaci <a href="https://orcid.org/0000-0003-3218-5102" class="quarto-ti
 <li><p>Corridor and segments</p></li>
 <li><p>River space</p></li>
 </ul>
+
 </div><div class="column" style="width:50%;">
 <p><img data-src="./fig/method-diagram.png" style="width:80.0%"></p>
 </div></div>
-</section>
+<aside><div>
+<p>Source: <span class="citation" data-cites="forgaci2018">Forgaci (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span></p>
+</div></aside></section>
 <section id="rcrisp" class="slide level2">
 <h2><code>rcrisp</code></h2>
 <ul>
-<li><p>Automated delineation of river spaces</p></li>
+<li><p>Automated delineation of river units</p></li>
 <li><p>R package (on the way to CRAN)</p></li>
-<li><p>Data from input or default sources:</p>
+<li><p>Input datasets:</p>
 <ul>
-<li><p>Digital Elevation Model (DEM)</p></li>
-<li><p>River geometry</p></li>
-<li><p>Streets and railways</p></li>
-<li><p>Buildings</p></li>
+<li><p>Raster: <strong>DEM</strong> (for <em>valley</em>)</p></li>
+<li><p>Vector: <strong>river</strong>, <strong>streets</strong> and <strong>railways</strong> (for <em>corridor</em> and <em>segments</em>), <strong>buildings</strong> (for <em>river space</em>)</p></li>
 </ul></li>
 </ul>
-</section>
-<section id="in-practice" class="slide level2">
-<h2>In practice</h2>
-<p>…</p>
-</section>
+
+<aside><div>
+<p><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/CityRiverSpaces/rcrisp"><code>CityRiverSpaces/rcrisp</code></a></p>
+</div></aside></section>
 <section id="data-sources" class="slide level2">
-<h2>Data Sources</h2>
+<h2>Data sources</h2>
+<p>Default:</p>
 <ul>
 <li><p><a href="https://doi.org/10.5270/ESA-c5d3d65"><strong>GLO-30 Copernicus DEM</strong></a> - global surface model (DSM), 30m resolution</p></li>
 <li><p><a href="https://www.openstreetmap.org/"><strong>Open Street Map (OSM)</strong></a> - river geometry, streets, railways, buildings</p></li>
 </ul>
 <p>… or any other source.</p>
+</section>
+<section id="in-practice" class="slide level2">
+<h2>In practice</h2>
+<p>…</p>
 </section>
 <section id="subpackages" class="slide level2">
 <h2>Subpackages</h2>
@@ -254,8 +268,10 @@ Claudiu Forgaci <a href="https://orcid.org/0000-0003-3218-5102" class="quarto-ti
 </section>
 <section id="clustering-wip" class="slide level2">
 <h2>Clustering (WIP)</h2>
+
+<aside><div>
 <p>Credits: Yehan Wu, TU Delft</p>
-</section>
+</div></aside></section>
 <section id="outlook" class="slide level2">
 <h2>Outlook</h2>
 <ul>
@@ -443,7 +459,7 @@ Tripathy, Pratyush, Pooja Rao, Krishnachandran Balakrishnan, and Teja Malladi. 2
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',

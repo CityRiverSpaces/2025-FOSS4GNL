@@ -1,31 +1,38 @@
 [
   {
-    "objectID": "slides.html#motivation",
-    "href": "slides.html#motivation",
+    "objectID": "slides.html#urban-river-transformations",
+    "href": "slides.html#urban-river-transformations",
     "title": "rcrisp",
-    "section": "Motivation",
-    "text": "Motivation\n…"
+    "section": "Urban river transformations",
+    "text": "Urban river transformations\n\n\n\nSource: Forgaci (2018)"
   },
   {
-    "objectID": "slides.html#the-challenge",
-    "href": "slides.html#the-challenge",
+    "objectID": "slides.html#drawing-spatial-units",
+    "href": "slides.html#drawing-spatial-units",
     "title": "rcrisp",
-    "section": "The Challenge",
-    "text": "The Challenge\n…"
+    "section": "Drawing spatial units",
+    "text": "Drawing spatial units\n\nRiver is often the boundary\nArbitrary delineations\nModifiable aereal unit problem"
   },
   {
-    "objectID": "slides.html#delineations",
-    "href": "slides.html#delineations",
+    "objectID": "slides.html#delineating-urban-rivers",
+    "href": "slides.html#delineating-urban-rivers",
     "title": "rcrisp",
-    "section": "Delineations",
-    "text": "Delineations\n\n\nThree layers (Forgaci 2018):\n\nValley\nCorridor and segments\nRiver space"
+    "section": "Delineating urban rivers",
+    "text": "Delineating urban rivers\n\n\nThree layers (Forgaci 2018):\n\nValley\nCorridor and segments\nRiver space\n\n\n\n\n\n\nSource: Forgaci (2018)"
   },
   {
     "objectID": "slides.html#rcrisp",
     "href": "slides.html#rcrisp",
     "title": "rcrisp",
     "section": "rcrisp",
-    "text": "rcrisp\n\nAutomated delineation of river spaces\nR package (on the way to CRAN)\nData from input or default sources:\n\nDigital Elevation Model (DEM)\nRiver geometry\nStreets and railways\nBuildings"
+    "text": "rcrisp\n\nAutomated delineation of river units\nR package (on the way to CRAN)\nInput datasets:\n\nRaster: DEM (for valley)\nVector: river, streets and railways (for corridor and segments), buildings (for river space)\n\n\n\n\n CityRiverSpaces/rcrisp"
+  },
+  {
+    "objectID": "slides.html#data-sources",
+    "href": "slides.html#data-sources",
+    "title": "rcrisp",
+    "section": "Data sources",
+    "text": "Data sources\nDefault:\n\nGLO-30 Copernicus DEM - global surface model (DSM), 30m resolution\nOpen Street Map (OSM) - river geometry, streets, railways, buildings\n\n… or any other source."
   },
   {
     "objectID": "slides.html#in-practice",
@@ -33,13 +40,6 @@
     "title": "rcrisp",
     "section": "In practice",
     "text": "In practice\n…"
-  },
-  {
-    "objectID": "slides.html#data-sources",
-    "href": "slides.html#data-sources",
-    "title": "rcrisp",
-    "section": "Data Sources",
-    "text": "Data Sources\n\nGLO-30 Copernicus DEM - global surface model (DSM), 30m resolution\nOpen Street Map (OSM) - river geometry, streets, railways, buildings\n\n… or any other source."
   },
   {
     "objectID": "slides.html#subpackages",
@@ -60,7 +60,7 @@
     "href": "slides.html#clustering-wip",
     "title": "rcrisp",
     "section": "Clustering (WIP)",
-    "text": "Clustering (WIP)\nCredits: Yehan Wu, TU Delft"
+    "text": "Clustering (WIP)\n\n\nCredits: Yehan Wu, TU Delft"
   },
   {
     "objectID": "slides.html#outlook",
