@@ -37,15 +37,13 @@ Source: @forgaci2018
 
 -   Arbitrary delineations
 
--   Modifiable aereal unit problem
+-   Modifiable areal unit problem
 
 ## Delineating urban rivers
 
-:::: {.columns}
-
-::: {.column width="50%"}
-
-Three layers [@forgaci2018]:
+:::::: columns
+:::: {.column width="50%"}
+Three layers:
 
 -   Valley
 
@@ -53,21 +51,19 @@ Three layers [@forgaci2018]:
 
 -   River space
 
-::::: aside
+::: aside
 Source: @forgaci2018
-:::::
-
 :::
+::::
 
 ::: {.column width="50%"}
 ![](./fig/method-diagram.png){width="80%"}
 :::
-
-::::
+::::::
 
 ## `rcrisp`
 
--   Automated delineation of river units
+-   Automated delineation of river spatial units
 
 -   R package (on the way to CRAN)
 
@@ -77,9 +73,9 @@ Source: @forgaci2018
 
     -   Vector: **river**, **streets** and **railways** (for *corridor* and *segments*), **buildings** (for *river space*)
 
-::::: aside
+::: aside
 {{< fa brands github >}} [`CityRiverSpaces/rcrisp`](https://github.com/CityRiverSpaces/rcrisp)
-:::::
+:::
 
 ## Data sources
 
@@ -87,51 +83,127 @@ Default:
 
 -   [**GLO-30 Copernicus DEM**](https://doi.org/10.5270/ESA-c5d3d65) - global surface model (DSM), 30m resolution
 
--   [**Open Street Map (OSM)**](https://www.openstreetmap.org/)  - river geometry, streets, railways, buildings
+-   [**Open Street Map (OSM)**](https://www.openstreetmap.org/) - river geometry, streets, railways, buildings
 
 ... or any other source.
 
-## In practice
+## River valley
 
-...
+::: {.r-stack}
+![](./fig/corridor/Warszawa-Wis%C5%82a-dem.png){height=600}
+
+![](./fig/corridor/Warszawa-Wis%C5%82a-river.png){.fragment height=600}
+
+![](./fig/corridor/Warszawa-Wis%C5%82a-valley.png){.fragment height=600}
+:::
+
+## River corridor and segments
+
+::: {.r-stack}
+![](./fig/corridor/Warszawa-Wis%C5%82a-dem.png){height=600}
+
+![](./fig/corridor/Warszawa-Wis%C5%82a-river.png){height=600}
+
+![](./fig/corridor/Warszawa-Wis%C5%82a-valley.png){height=600}
+
+![](./fig/corridor/Warszawa-Wis%C5%82a-network.png){.fragment height=600}
+
+![](./fig/corridor/Warszawa-Wis%C5%82a-corridor.png){.fragment height=600}
+
+![](./fig/corridor/Warszawa-Wis%C5%82a-segments.png){.fragment height=600}
+:::
+
+## River space
+
+::: {.r-stack}
+![](./fig/corridor/Warszawa-Wis%C5%82a-dem.png){height=600}
+
+![](./fig/corridor/Warszawa-Wis%C5%82a-river.png){height=600}
+
+![](./fig/corridor/Warszawa-Wis%C5%82a-buildings.png){.fragment height=600}
+
+![](./fig/corridor/Warszawa-Wis%C5%82a-riverspace.png){.fragment height=600}
+:::
 
 ## Subpackages
 
-::::: {.columns}
-
+::::::: columns
 :::: {.column width="50%"}
 `rcoins`
 
 ::: {style="font-size: 0.6em"}
 Continuity in Street Networks [@tripathy2021]
 :::
-
 ::::
 
 :::: {.column width="50%"}
 `visor`
 
-:::{style="font-size: 0.6em"}
+::: {style="font-size: 0.6em"}
 Isovists for arbitrary geometries
 :::
-
 ::::
-
-:::::
+:::::::
 
 ## City River Spaces Dataset
 
+:::::: columns
+
+:::: {.column width="50%"}
 -   Cities in Europe
 
--   population \> 250,000 ([Eurostat](https://doi.org/10.2908/URB_CPOP1))
+-   Population \> 250,000 ([Eurostat](https://doi.org/10.2908/URB_CPOP1))
 
--   crossed by a river (OSM `waterway=river`)
+-   Crossed by a river (OSM `waterway=river`)
+::::
 
-## Clustering (WIP)
+:::: {.column width="50%"}
+![](./fig/city_river_locations.png)
+::::
 
-::: aside
+::::::
+
+## Clustering river segments (preliminary)
+
+:::::: columns
+
+:::: {.column width="50%"}
+
+-   177 cities, 663 river segments
+
+-   11 metrics (urban form and river space)
+
+-   $k$-means with Silhouette method
+
+::::
+
+:::: {.column width="50%"}
+![](./fig/clustering/PCA.png)
+::::
+
+::::::
+
+:::: aside
 Credits: Yehan Wu, TU Delft
+::::
+
+## Cluster centers
+
+::: {layout-ncol=5}
+![#1 (Cardiff)](./fig/clustering/top5/1_1_Cardiff_Rhymney%20River.png)
+
+![#2 (Wrocław)](./fig/clustering/top5/2_1_Wroc%C5%82aw_Odra.png)
+
+![#3 (Newcastle)](./fig/clustering/top5/3_1_Newcastle%20upon%20Tyne_River%20Tyne.png)
+
+![#4 (Białystok)](./fig/clustering/top5/4_1_Bia%C5%82ystok_Bia%C5%82a.png)
+
+![#5 (North Lanarkshire)](./fig/clustering/top5/5_1_North%20Lanarkshire_River%20Clyde.png)
 :::
+
+:::: aside
+Credits: Yehan Wu, TU Delft
+::::
 
 ## Outlook
 
@@ -140,6 +212,10 @@ Credits: Yehan Wu, TU Delft
 -   Consolidate dataset, refine clustering
 
 -   Development of a web app (Shiny)
+
+::: aside
+{{< fa brands github >}} [`CityRiverSpaces/rcrisp`](https://github.com/CityRiverSpaces/rcrisp)
+:::
 
 ## Thank you! {.center}
 
