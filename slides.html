@@ -195,14 +195,14 @@ Claudiu Forgaci <a href="https://orcid.org/0000-0003-3218-5102" class="quarto-ti
 <ul>
 <li><p>River is often the boundary</p></li>
 <li><p>Arbitrary delineations</p></li>
-<li><p>Modifiable aereal unit problem</p></li>
+<li><p>Modifiable areal unit problem</p></li>
 </ul>
 </section>
 <section id="delineating-urban-rivers" class="slide level2">
 <h2>Delineating urban rivers</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Three layers <span class="citation" data-cites="forgaci2018">(<a href="#/references" role="doc-biblioref" onclick="">Forgaci 2018</a>)</span>:</p>
+<p>Three layers:</p>
 <ul>
 <li><p>Valley</p></li>
 <li><p>Corridor and segments</p></li>
@@ -218,7 +218,7 @@ Claudiu Forgaci <a href="https://orcid.org/0000-0003-3218-5102" class="quarto-ti
 <section id="rcrisp" class="slide level2">
 <h2><code>rcrisp</code></h2>
 <ul>
-<li><p>Automated delineation of river units</p></li>
+<li><p>Automated delineation of river spatial units</p></li>
 <li><p>R package (on the way to CRAN)</p></li>
 <li><p>Input datasets:</p>
 <ul>
@@ -239,9 +239,33 @@ Claudiu Forgaci <a href="https://orcid.org/0000-0003-3218-5102" class="quarto-ti
 </ul>
 <p>… or any other source.</p>
 </section>
-<section id="in-practice" class="slide level2">
-<h2>In practice</h2>
-<p>…</p>
+<section id="river-valley" class="slide level2">
+<h2>River valley</h2>
+<div class="r-stack">
+<p><img data-src="./fig/corridor/Warszawa-Wisła-dem.png" height="600"></p>
+<p><img data-src="./fig/corridor/Warszawa-Wisła-river.png" class="fragment" height="600"></p>
+<p><img data-src="./fig/corridor/Warszawa-Wisła-valley.png" class="fragment" height="600"></p>
+</div>
+</section>
+<section id="river-corridor-and-segments" class="slide level2">
+<h2>River corridor and segments</h2>
+<div class="r-stack">
+<p><img data-src="./fig/corridor/Warszawa-Wisła-dem.png" height="600"></p>
+<p><img data-src="./fig/corridor/Warszawa-Wisła-river.png" height="600"></p>
+<p><img data-src="./fig/corridor/Warszawa-Wisła-valley.png" height="600"></p>
+<p><img data-src="./fig/corridor/Warszawa-Wisła-network.png" class="fragment" height="600"></p>
+<p><img data-src="./fig/corridor/Warszawa-Wisła-corridor.png" class="fragment" height="600"></p>
+<p><img data-src="./fig/corridor/Warszawa-Wisła-segments.png" class="fragment" height="600"></p>
+</div>
+</section>
+<section id="river-space" class="slide level2">
+<h2>River space</h2>
+<div class="r-stack">
+<p><img data-src="./fig/corridor/Warszawa-Wisła-dem.png" height="600"></p>
+<p><img data-src="./fig/corridor/Warszawa-Wisła-river.png" height="600"></p>
+<p><img data-src="./fig/corridor/Warszawa-Wisła-buildings.png" class="fragment" height="600"></p>
+<p><img data-src="./fig/corridor/Warszawa-Wisła-riverspace.png" class="fragment" height="600"></p>
+</div>
 </section>
 <section id="subpackages" class="slide level2">
 <h2>Subpackages</h2>
@@ -260,14 +284,79 @@ Claudiu Forgaci <a href="https://orcid.org/0000-0003-3218-5102" class="quarto-ti
 </section>
 <section id="city-river-spaces-dataset" class="slide level2">
 <h2>City River Spaces Dataset</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li><p>Cities in Europe</p></li>
-<li><p>population &gt; 250,000 (<a href="https://doi.org/10.2908/URB_CPOP1">Eurostat</a>)</p></li>
-<li><p>crossed by a river (OSM <code>waterway=river</code>)</p></li>
+<li><p>Population &gt; 250,000 (<a href="https://doi.org/10.2908/URB_CPOP1">Eurostat</a>)</p></li>
+<li><p>Crossed by a river (OSM <code>waterway=river</code>)</p></li>
 </ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./fig/city_river_locations.png"></p>
+</div></div>
 </section>
-<section id="clustering-wip" class="slide level2">
-<h2>Clustering (WIP)</h2>
+<section id="clustering-river-segments-preliminary" class="slide level2">
+<h2>Clustering river segments (preliminary)</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>177 cities, 663 river segments</p></li>
+<li><p>11 metrics (urban form and river space)</p></li>
+<li><p><span class="math inline">\(k\)</span>-means with Silhouette method</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./fig/clustering/PCA.png"></p>
+</div></div>
+
+<aside><div>
+<p>Credits: Yehan Wu, TU Delft</p>
+</div></aside></section>
+<section id="cluster-centers" class="slide level2">
+<h2>Cluster centers</h2>
+<div class="quarto-layout-panel" data-layout-ncol="5">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./fig/clustering/top5/1_1_Cardiff_Rhymney River.png"></p>
+<figcaption>#1 (Cardiff)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./fig/clustering/top5/2_1_Wrocław_Odra.png"></p>
+<figcaption>#2 (Wrocław)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./fig/clustering/top5/3_1_Newcastle upon Tyne_River Tyne.png"></p>
+<figcaption>#3 (Newcastle)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./fig/clustering/top5/4_1_Białystok_Biała.png"></p>
+<figcaption>#4 (Białystok)</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./fig/clustering/top5/5_1_North Lanarkshire_River Clyde.png"></p>
+<figcaption>#5 (North Lanarkshire)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 
 <aside><div>
 <p>Credits: Yehan Wu, TU Delft</p>
@@ -279,7 +368,10 @@ Claudiu Forgaci <a href="https://orcid.org/0000-0003-3218-5102" class="quarto-ti
 <li><p>Consolidate dataset, refine clustering</p></li>
 <li><p>Development of a web app (Shiny)</p></li>
 </ul>
-</section>
+
+<aside><div>
+<p><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/CityRiverSpaces/rcrisp"><code>CityRiverSpaces/rcrisp</code></a></p>
+</div></aside></section>
 <section id="thank-you" class="slide level2 center">
 <h2>Thank you!</h2>
 </section>

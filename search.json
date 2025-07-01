@@ -11,21 +11,21 @@
     "href": "slides.html#drawing-spatial-units",
     "title": "rcrisp",
     "section": "Drawing spatial units",
-    "text": "Drawing spatial units\n\nRiver is often the boundary\nArbitrary delineations\nModifiable aereal unit problem"
+    "text": "Drawing spatial units\n\nRiver is often the boundary\nArbitrary delineations\nModifiable areal unit problem"
   },
   {
     "objectID": "slides.html#delineating-urban-rivers",
     "href": "slides.html#delineating-urban-rivers",
     "title": "rcrisp",
     "section": "Delineating urban rivers",
-    "text": "Delineating urban rivers\n\n\nThree layers (Forgaci 2018):\n\nValley\nCorridor and segments\nRiver space\n\n\n\n\n\n\nSource: Forgaci (2018)"
+    "text": "Delineating urban rivers\n\n\nThree layers:\n\nValley\nCorridor and segments\nRiver space\n\n\n\n\n\n\nSource: Forgaci (2018)"
   },
   {
     "objectID": "slides.html#rcrisp",
     "href": "slides.html#rcrisp",
     "title": "rcrisp",
     "section": "rcrisp",
-    "text": "rcrisp\n\nAutomated delineation of river units\nR package (on the way to CRAN)\nInput datasets:\n\nRaster: DEM (for valley)\nVector: river, streets and railways (for corridor and segments), buildings (for river space)\n\n\n\n\n CityRiverSpaces/rcrisp"
+    "text": "rcrisp\n\nAutomated delineation of river spatial units\nR package (on the way to CRAN)\nInput datasets:\n\nRaster: DEM (for valley)\nVector: river, streets and railways (for corridor and segments), buildings (for river space)\n\n\n\n\n CityRiverSpaces/rcrisp"
   },
   {
     "objectID": "slides.html#data-sources",
@@ -35,11 +35,25 @@
     "text": "Data sources\nDefault:\n\nGLO-30 Copernicus DEM - global surface model (DSM), 30m resolution\nOpen Street Map (OSM) - river geometry, streets, railways, buildings\n\n… or any other source."
   },
   {
-    "objectID": "slides.html#in-practice",
-    "href": "slides.html#in-practice",
+    "objectID": "slides.html#river-valley",
+    "href": "slides.html#river-valley",
     "title": "rcrisp",
-    "section": "In practice",
-    "text": "In practice\n…"
+    "section": "River valley",
+    "text": "River valley"
+  },
+  {
+    "objectID": "slides.html#river-corridor-and-segments",
+    "href": "slides.html#river-corridor-and-segments",
+    "title": "rcrisp",
+    "section": "River corridor and segments",
+    "text": "River corridor and segments"
+  },
+  {
+    "objectID": "slides.html#river-space",
+    "href": "slides.html#river-space",
+    "title": "rcrisp",
+    "section": "River space",
+    "text": "River space"
   },
   {
     "objectID": "slides.html#subpackages",
@@ -53,21 +67,28 @@
     "href": "slides.html#city-river-spaces-dataset",
     "title": "rcrisp",
     "section": "City River Spaces Dataset",
-    "text": "City River Spaces Dataset\n\nCities in Europe\npopulation &gt; 250,000 (Eurostat)\ncrossed by a river (OSM waterway=river)"
+    "text": "City River Spaces Dataset\n\n\n\nCities in Europe\nPopulation &gt; 250,000 (Eurostat)\nCrossed by a river (OSM waterway=river)"
   },
   {
-    "objectID": "slides.html#clustering-wip",
-    "href": "slides.html#clustering-wip",
+    "objectID": "slides.html#clustering-river-segments-preliminary",
+    "href": "slides.html#clustering-river-segments-preliminary",
     "title": "rcrisp",
-    "section": "Clustering (WIP)",
-    "text": "Clustering (WIP)\n\n\nCredits: Yehan Wu, TU Delft"
+    "section": "Clustering river segments (preliminary)",
+    "text": "Clustering river segments (preliminary)\n\n\n\n177 cities, 663 river segments\n11 metrics (urban form and river space)\n\\(k\\)-means with Silhouette method\n\n\n\n\n\n\nCredits: Yehan Wu, TU Delft"
+  },
+  {
+    "objectID": "slides.html#cluster-centers",
+    "href": "slides.html#cluster-centers",
+    "title": "rcrisp",
+    "section": "Cluster centers",
+    "text": "Cluster centers\n\n\n\n\n\n\n#1 (Cardiff)\n\n\n\n\n\n\n\n#2 (Wrocław)\n\n\n\n\n\n\n\n#3 (Newcastle)\n\n\n\n\n\n\n\n#4 (Białystok)\n\n\n\n\n\n\n\n#5 (North Lanarkshire)\n\n\n\n\n\n\n\nCredits: Yehan Wu, TU Delft"
   },
   {
     "objectID": "slides.html#outlook",
     "href": "slides.html#outlook",
     "title": "rcrisp",
     "section": "Outlook",
-    "text": "Outlook\n\nExpand data sources (Overture maps, OpenTopography)\nConsolidate dataset, refine clustering\nDevelopment of a web app (Shiny)"
+    "text": "Outlook\n\nExpand data sources (Overture maps, OpenTopography)\nConsolidate dataset, refine clustering\nDevelopment of a web app (Shiny)\n\n\n\n CityRiverSpaces/rcrisp"
   },
   {
     "objectID": "slides.html#thank-you",
