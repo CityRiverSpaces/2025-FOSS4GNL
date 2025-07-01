@@ -3,12 +3,13 @@ title: '`rcrisp`'
 subtitle: A tool for the automated delineation of urban river spaces
 format:
   revealjs:
-    theme: serif
+    # theme: serif
     slide-number: true
     chalkboard:
       buttons: false
     preview-links: auto
     footer: '[FOSS4G-NL](https://foss4g.nl/)'
+    transition: slide
 author:
   - name: Francesco Nattino
     email: f.nattino@esciencecenter.nl
@@ -22,15 +23,23 @@ date: 2025-07-03
 bibliography: references.bib
 ---
 
-## Motivation
+## Urban river transformations
 
-...
+![](./fig/transformations.png)
 
-## The Challenge
+::: aside
+Source: @forgaci2018
+:::
 
-...
+## Drawing spatial units
 
-## Delineations
+-   River is often the boundary
+
+-   Arbitrary delineations
+
+-   Modifiable aereal unit problem
+
+## Delineating urban rivers
 
 :::: {.columns}
 
@@ -43,6 +52,11 @@ Three layers [@forgaci2018]:
 -   Corridor and segments
 
 -   River space
+
+::::: aside
+Source: @forgaci2018
+:::::
+
 :::
 
 ::: {.column width="50%"}
@@ -53,33 +67,33 @@ Three layers [@forgaci2018]:
 
 ## `rcrisp`
 
--   Automated delineation of river spaces
+-   Automated delineation of river units
 
 -   R package (on the way to CRAN)
 
--   Data from input or default sources:
+-   Input datasets:
 
-    -   Digital Elevation Model (DEM)
+    -   Raster: **DEM** (for *valley*)
 
-    -   River geometry
+    -   Vector: **river**, **streets** and **railways** (for *corridor* and *segments*), **buildings** (for *river space*)
 
-    -   Streets and railways
+::::: aside
+{{< fa brands github >}} [`CityRiverSpaces/rcrisp`](https://github.com/CityRiverSpaces/rcrisp)
+:::::
 
-    -   Buildings
+## Data sources
 
-
-## In practice
-
-...
-
-
-## Data Sources
+Default:
 
 -   [**GLO-30 Copernicus DEM**](https://doi.org/10.5270/ESA-c5d3d65) - global surface model (DSM), 30m resolution
 
 -   [**Open Street Map (OSM)**](https://www.openstreetmap.org/)  - river geometry, streets, railways, buildings
 
 ... or any other source.
+
+## In practice
+
+...
 
 ## Subpackages
 
@@ -115,7 +129,9 @@ Isovists for arbitrary geometries
 
 ## Clustering (WIP)
 
+::: aside
 Credits: Yehan Wu, TU Delft
+:::
 
 ## Outlook
 
