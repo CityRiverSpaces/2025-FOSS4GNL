@@ -89,59 +89,117 @@ Default:
 
 ## River valley
 
+::::::: columns
+:::: {.column width="40%"}
+-   Rough estimate
+
+-   Cost-distance using slope as friction
+
+-   Threshold on average height
+::::
+
+:::: {.column width="60%"}
 ::: {.r-stack}
-![](./fig/corridor/Warszawa-Wis%C5%82a-dem.png){height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-dem.png){.fragment width=600}
 
-![](./fig/corridor/Warszawa-Wis%C5%82a-river.png){.fragment height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-river.png){.fragment width=600}
 
-![](./fig/corridor/Warszawa-Wis%C5%82a-valley.png){.fragment height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-valley.png){.fragment width=600}
 :::
+::::
+
+::: aside
+Vistula, Warsaw
+:::
+
+:::::::
 
 ## River corridor and segments
 
+::::::: columns
+:::: {.column width="40%"}
+-   Main highways and railways
+
+-   Corridor as shortest path along valley edge
+
+-   Segments as blocks split by main river crossings
+::::
+
+:::: {.column width="60%"}
 ::: {.r-stack}
-![](./fig/corridor/Warszawa-Wis%C5%82a-dem.png){height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-dem.png){width=600}
 
-![](./fig/corridor/Warszawa-Wis%C5%82a-river.png){height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-river.png){width=600}
 
-![](./fig/corridor/Warszawa-Wis%C5%82a-valley.png){height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-valley.png){width=600}
 
-![](./fig/corridor/Warszawa-Wis%C5%82a-network.png){.fragment height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-network.png){.fragment width=600}
 
-![](./fig/corridor/Warszawa-Wis%C5%82a-corridor.png){.fragment height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-corridor.png){.fragment width=600}
 
-![](./fig/corridor/Warszawa-Wis%C5%82a-segments.png){.fragment height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-segments.png){.fragment width=600}
 :::
+::::
+
+::: aside
+Vistula, Warsaw
+:::
+
+:::::::
 
 ## River space
 
+::::::: columns
+:::: {.column width="40%"}
+-   Buildings
+
+-   Isovist using viewpoints on river geometry
+::::
+
+:::: {.column width="60%"}
 ::: {.r-stack}
-![](./fig/corridor/Warszawa-Wis%C5%82a-dem.png){height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-dem.png){width=600}
 
-![](./fig/corridor/Warszawa-Wis%C5%82a-river.png){height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-river.png){width=600}
 
-![](./fig/corridor/Warszawa-Wis%C5%82a-buildings.png){.fragment height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-buildings.png){.fragment width=600}
 
-![](./fig/corridor/Warszawa-Wis%C5%82a-riverspace.png){.fragment height=600}
+![](./fig/corridor/Warszawa-Wis%C5%82a-riverspace.png){.fragment width=600}
 :::
+::::
+
+::: aside
+Vistula, Warsaw
+:::
+
+:::::::
 
 ## Subpackages
 
 ::::::: columns
-:::: {.column width="50%"}
+:::: {.column .fragment width="50%"}
 `rcoins`
 
 ::: {style="font-size: 0.6em"}
 Continuity in Street Networks [@tripathy2021]
 :::
+
+::: {.r-stack}
+![](./fig/streets.png)
+
+![](./fig/streets-rcoins.png){.fragment}
+:::
 ::::
 
-:::: {.column width="50%"}
+:::: {.column .fragment width="50%"}
 `visor`
 
 ::: {style="font-size: 0.6em"}
 Isovists for arbitrary geometries
 :::
+
+![](./fig/visor.png)
+
 ::::
 :::::::
 
