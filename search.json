@@ -39,28 +39,28 @@
     "href": "slides.html#river-valley",
     "title": "rcrisp",
     "section": "River valley",
-    "text": "River valley"
+    "text": "River valley\n\n\n\nRough estimate\nCost-distance using slope as friction\nThreshold on average height\n\n\n\n\n\n\n\n\n\nVistula, Warsaw"
   },
   {
     "objectID": "slides.html#river-corridor-and-segments",
     "href": "slides.html#river-corridor-and-segments",
     "title": "rcrisp",
     "section": "River corridor and segments",
-    "text": "River corridor and segments"
+    "text": "River corridor and segments\n\n\n\nMain highways and railways\nCorridor as shortest path along valley edge\nSegments as blocks split by main river crossings\n\n\n\n\n\n\n\n\n\n\n\n\nVistula, Warsaw"
   },
   {
     "objectID": "slides.html#river-space",
     "href": "slides.html#river-space",
     "title": "rcrisp",
     "section": "River space",
-    "text": "River space"
+    "text": "River space\n\n\n\nBuildings\nIsovist using viewpoints on river geometry\n\n\n\n\n\n\n\n\n\n\nVistula, Warsaw"
   },
   {
     "objectID": "slides.html#subpackages",
     "href": "slides.html#subpackages",
     "title": "rcrisp",
     "section": "Subpackages",
-    "text": "Subpackages\n\n\nrcoins\n\nContinuity in Street Networks (Tripathy et al. 2021)\n\n\nvisor\n\nIsovists for arbitrary geometries"
+    "text": "Subpackages\n\n\nrcoins\n\nContinuity in Street Networks (Tripathy et al. 2021)\n\n\n\n\n\n\nvisor\n\nIsovists for arbitrary geometries"
   },
   {
     "objectID": "slides.html#city-river-spaces-dataset",
