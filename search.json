@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "slides.html#team",
+    "href": "slides.html#team",
+    "title": "rcrisp",
+    "section": "Team",
+    "text": "Team"
+  },
+  {
     "objectID": "slides.html#urban-river-transformations",
     "href": "slides.html#urban-river-transformations",
     "title": "rcrisp",
@@ -25,7 +32,7 @@
     "href": "slides.html#rcrisp",
     "title": "rcrisp",
     "section": "rcrisp",
-    "text": "rcrisp\n\nAutomated delineation of river spatial units\nR package (on the way to CRAN)\nInput datasets:\n\nRaster: DEM (for valley)\nVector: river, streets and railways (for corridor and segments), buildings (for river space)\n\n\n\n\n CityRiverSpaces/rcrisp"
+    "text": "rcrisp\n\nAutomated delineation of river spatial units\nR package (CRAN)\nInput datasets:\n\nRaster: DEM (for valley)\nVector: river, streets and railways (for corridor and segments), buildings (for river space)\n\n\n\n\n CityRiverSpaces/rcrisp"
   },
   {
     "objectID": "slides.html#data-sources",
@@ -63,6 +70,13 @@
     "text": "Subpackages\n\n\nrcoins\n\nContinuity in Street Networks (Tripathy et al. 2021)\n\n\n\n\n\n\nvisor\n\nIsovists for arbitrary geometries"
   },
   {
+    "objectID": "slides.html#shiny-web-app",
+    "href": "slides.html#shiny-web-app",
+    "title": "rcrisp",
+    "section": "Shiny web app",
+    "text": "Shiny web app"
+  },
+  {
     "objectID": "slides.html#city-river-spaces-dataset",
     "href": "slides.html#city-river-spaces-dataset",
     "title": "rcrisp",
@@ -70,25 +84,25 @@
     "text": "City River Spaces Dataset\n\n\n\nCities in Europe\nPopulation &gt; 250,000 (Eurostat)\nCrossed by a river (OSM waterway=river)"
   },
   {
-    "objectID": "slides.html#clustering-river-segments-preliminary",
-    "href": "slides.html#clustering-river-segments-preliminary",
+    "objectID": "slides.html#clustering-river-segments-preliminary---1",
+    "href": "slides.html#clustering-river-segments-preliminary---1",
     "title": "rcrisp",
-    "section": "Clustering river segments (preliminary)",
-    "text": "Clustering river segments (preliminary)\n\n\n\n177 cities, 663 river segments\n11 metrics (urban form and river space)\n\\(k\\)-means with Silhouette method\n\n\n\n\n\n\nCredits: Yehan Wu, TU Delft"
+    "section": "Clustering river segments (preliminary) - 1",
+    "text": "Clustering river segments (preliminary) - 1\n\n\n\n177 cities, 663 river segments\n11 metrics (urban form and river space)\n\\(k\\)-means with Silhouette method\n\n\n\n\n\n\nCredits: Yehan Wu, TU Delft"
   },
   {
-    "objectID": "slides.html#cluster-centers",
-    "href": "slides.html#cluster-centers",
+    "objectID": "slides.html#clustering-river-segments-preliminary---2",
+    "href": "slides.html#clustering-river-segments-preliminary---2",
     "title": "rcrisp",
-    "section": "Cluster centers",
-    "text": "Cluster centers\n\n\n\n\n\n\n#1 (Cardiff)\n\n\n\n\n\n\n\n#2 (Wrocław)\n\n\n\n\n\n\n\n#3 (Newcastle)\n\n\n\n\n\n\n\n#4 (Białystok)\n\n\n\n\n\n\n\n#5 (North Lanarkshire)\n\n\n\n\n\n\n\nCredits: Yehan Wu, TU Delft"
+    "section": "Clustering river segments (preliminary) - 2",
+    "text": "Clustering river segments (preliminary) - 2\nCluster centers:\n\n\n\n\n\n\n#1 (Cardiff)\n\n\n\n\n\n\n\n#2 (Wrocław)\n\n\n\n\n\n\n\n#3 (Newcastle)\n\n\n\n\n\n\n\n#4 (Białystok)\n\n\n\n\n\n\n\n#5 (North Lanarkshire)\n\n\n\n\n\n\n\nCredits: Yehan Wu, TU Delft"
   },
   {
     "objectID": "slides.html#outlook",
     "href": "slides.html#outlook",
     "title": "rcrisp",
     "section": "Outlook",
-    "text": "Outlook\n\nExpand data sources (Overture maps, OpenTopography)\nConsolidate dataset, refine clustering\nDevelopment of a web app (Shiny)\n\n\n\n CityRiverSpaces/rcrisp"
+    "text": "Outlook\n\nExpand data sources (Overture maps, OpenTopography)\nConsolidate dataset\nPublish Shiny app\n\n\n\n CityRiverSpaces/rcrisp"
   },
   {
     "objectID": "slides.html#thank-you",
