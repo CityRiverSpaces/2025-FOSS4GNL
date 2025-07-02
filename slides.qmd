@@ -23,6 +23,22 @@ date: 2025-07-03
 bibliography: references.bib
 ---
 
+## Team
+
+::::::: columns
+:::: {.column width="50%"}
+![](./fig/Francesco.jpg){width=300}
+
+![](./fig/netherlands-escience-center-logo-RGB.png){height=150}
+::::
+
+:::: {.column .fragment width="50%"}
+![](./fig/Claudiu.jpg){width=300}
+
+![](./fig/TUDelft_logo_rgb.png){height=150}
+::::
+:::::::
+
 ## Urban river transformations
 
 ![](./fig/transformations.png)
@@ -65,7 +81,7 @@ Source: @forgaci2018
 
 -   Automated delineation of river spatial units
 
--   R package (on the way to CRAN)
+-   R package (CRAN)
 
 -   Input datasets:
 
@@ -203,6 +219,18 @@ Isovists for arbitrary geometries
 ::::
 :::::::
 
+## Shiny web app
+
+::: {.r-stack}
+![](./fig/app/screenshot-1.png){width=800}
+
+![](./fig/app/screenshot-2.png){.fragment width=800}
+
+![](./fig/app/screenshot-3.png){.fragment width=800}
+
+![](./fig/app/screenshot-4.png){.fragment width=800}
+:::
+
 ## City River Spaces Dataset
 
 :::::: columns
@@ -221,7 +249,7 @@ Isovists for arbitrary geometries
 
 ::::::
 
-## Clustering river segments (preliminary)
+## Clustering river segments (preliminary) - 1
 
 :::::: columns
 
@@ -245,7 +273,9 @@ Isovists for arbitrary geometries
 Credits: Yehan Wu, TU Delft
 ::::
 
-## Cluster centers
+## Clustering river segments (preliminary) - 2
+
+Cluster centers:
 
 ::: {layout-ncol=5}
 ![#1 (Cardiff)](./fig/clustering/top5/1_1_Cardiff_Rhymney%20River.png)
@@ -267,9 +297,9 @@ Credits: Yehan Wu, TU Delft
 
 -   Expand data sources (Overture maps, OpenTopography)
 
--   Consolidate dataset, refine clustering
+-   Consolidate dataset
 
--   Development of a web app (Shiny)
+-   Publish Shiny app
 
 ::: aside
 {{< fa brands github >}} [`CityRiverSpaces/rcrisp`](https://github.com/CityRiverSpaces/rcrisp)
